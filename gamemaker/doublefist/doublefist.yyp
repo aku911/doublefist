@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1e179f2b-9568-43c0-9557-3dc8e60d0b69",
+            "Value": {
+                "id": "2453f58e-182b-4b0a-b613-df2f4ffa3e1f",
+                "resourcePath": "objects\\objCutSceneBase\\objCutSceneBase.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "23466fba-1320-4aca-9d36-e9fe5a3c1d0e",
             "Value": {
                 "id": "f59485b0-ffea-4fd7-bc5f-650d0ea21bb5",
@@ -167,6 +175,14 @@
             }
         },
         {
+            "Key": "89b6b433-5934-404d-867e-8c4bad62b81b",
+            "Value": {
+                "id": "944959c8-b0b6-4cb5-9683-c3261702af7d",
+                "resourcePath": "sprites\\spr_firstScene\\spr_firstScene.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8a65eb06-1702-4ee3-b11e-5fe79a2f34e2",
             "Value": {
                 "id": "6acc8b5b-3545-4e5d-bf36-e8d943b91485",
@@ -231,6 +247,14 @@
             }
         },
         {
+            "Key": "b08e816d-ecd2-45c1-8b23-6290ca2a6441",
+            "Value": {
+                "id": "40a3de93-222e-42ae-8128-53ebc10c2e1f",
+                "resourcePath": "objects\\objfirstcutscene\\objfirstcutscene.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b5a00d12-4085-4bee-916f-f87b6be2acd5",
             "Value": {
                 "id": "52f729d4-7a79-434b-9369-7ef99e430d27",
@@ -244,6 +268,22 @@
                 "id": "ce288594-79de-4743-8d99-139eda2d2a1b",
                 "resourcePath": "views\\c1c5466e-94d9-49f5-9023-9ca89028f566.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c2637582-33b1-41be-9314-94819fe659b7",
+            "Value": {
+                "id": "a29bce1e-c278-4059-8199-57e7bfff15bd",
+                "resourcePath": "rooms\\openingcutscene\\openingcutscene.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "c819afe6-983a-4bbd-8f32-2ced4ddb0773",
+            "Value": {
+                "id": "b39ec1eb-efe9-4c7e-ba16-a7c765c16ba3",
+                "resourcePath": "sounds\\peacefull\\peacefull.yy",
+                "resourceType": "GMSound"
             }
         },
         {
