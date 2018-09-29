@@ -50,8 +50,16 @@
             "Key": "121aeb5a-232a-48ce-98ac-16211b0d6666",
             "Value": {
                 "id": "c60c406b-0848-4f2b-8a45-f05597e3caae",
-                "resourcePath": "fonts\\arial\\arial.yy",
+                "resourcePath": "fonts\\arialHuge\\arialHuge.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "13ef5777-8718-4d66-b8ae-bf0d005469c8",
+            "Value": {
+                "id": "bf5e5984-e29f-4955-9350-48eadecb8eb9",
+                "resourcePath": "objects\\objGlobalHandler\\objGlobalHandler.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -95,6 +103,14 @@
             }
         },
         {
+            "Key": "512e975c-fb33-4eba-91a4-cacdb399a555",
+            "Value": {
+                "id": "8ca02c90-27b3-438e-b6c4-dea3cd658a45",
+                "resourcePath": "objects\\objFader\\objFader.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "517219c0-b01f-49c8-99f0-6b057986101f",
             "Value": {
                 "id": "c13e065f-e9c8-4858-95b9-96bd991a20e5",
@@ -108,6 +124,14 @@
                 "id": "88001f19-e4bd-469b-8fb7-105dd0f15c77",
                 "resourcePath": "views\\52039f4b-1bb1-4769-adb8-3d6fc98a75b5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "564bd4ab-78c9-44ae-a879-2aa4eb215579",
+            "Value": {
+                "id": "c2e2000b-3337-43b1-b284-7c9e90128db7",
+                "resourcePath": "rooms\\textcutscene\\textcutscene.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -135,6 +159,14 @@
             }
         },
         {
+            "Key": "6aedc577-c2cf-4ef2-85b4-d1d26e9a1f14",
+            "Value": {
+                "id": "14a0b6f5-31b0-4dd5-b4b2-037cb099fdfb",
+                "resourcePath": "timelines\\timelineCutscene\\timelineCutscene.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "6cfb05de-4259-4d4b-9cd1-e5dff21b85b9",
             "Value": {
                 "id": "fc406733-6264-4165-bfd1-fbd04d6031d3",
@@ -156,6 +188,14 @@
                 "id": "84c903bc-d567-40dc-b54d-a2ba5238ecfc",
                 "resourcePath": "views\\70fc1d59-9ea5-436f-a91e-273ea7b244b0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7bdfd85d-7d20-45d7-ad89-a73175c71ac6",
+            "Value": {
+                "id": "7ebd2796-fce4-4ede-b7fc-998c9ddefb32",
+                "resourcePath": "objects\\objTextScene\\objTextScene.yy",
+                "resourceType": "GMObject"
             }
         },
         {

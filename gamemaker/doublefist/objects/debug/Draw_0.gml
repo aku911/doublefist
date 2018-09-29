@@ -8,9 +8,9 @@ draw_set_alpha(($FF000000 >> 24) / $ff);
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
 /// @DnDHash : 1824E610
-/// @DnDArgument : "font" "arial"
+/// @DnDArgument : "font" "arialHuge"
 /// @DnDSaveInfo : "font" "121aeb5a-232a-48ce-98ac-16211b0d6666"
-draw_set_font(arial);
+draw_set_font(arialHuge);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
