@@ -9,9 +9,9 @@ image_yscale = 2.5;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 19E0079D
-/// @DnDArgument : "expr" "5"
+/// @DnDArgument : "expr" "50"
 /// @DnDArgument : "var" "HP"
-HP = 5;
+HP = 50;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

@@ -6,7 +6,15 @@ if  (a ==1)
 	{
 		audio_stop_sound(music);
 	}
-	room_goto_next();
+	if (room_exists(room_next(room))) 
+	{
+		room_goto_next();
+	} 
+	else 
+	{
+		instance_destroy();
+	}
+	
 	fade =-1;
 }
 

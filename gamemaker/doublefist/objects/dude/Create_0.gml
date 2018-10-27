@@ -1,21 +1,17 @@
-/// @DnDAction : YoYo Games.Instances.Sprite_Animation_Speed
-/// @DnDVersion : 1
-/// @DnDHash : 1C00DB69
-/// @DnDArgument : "speed" "0"
 image_speed = 0;
 
-/// @DnDAction : YoYo Games.Instances.Set_Sprite
-/// @DnDVersion : 1
-/// @DnDHash : 3E66EC5C
-/// @DnDArgument : "spriteind" "spr_dude_walking"
-/// @DnDSaveInfo : "spriteind" "97e5273f-5c40-403a-876a-95738ad1f16f"
 sprite_index = spr_dude_walking;
 image_index = 0;
 
-/// @DnDAction : YoYo Games.Instances.Sprite_Scale
-/// @DnDVersion : 1
-/// @DnDHash : 78A2D4B3
-/// @DnDArgument : "xscale" "2"
-/// @DnDArgument : "yscale" "2"
 image_xscale = 2;
 image_yscale = 2;
+
+last_rightstick = 0;
+direction_and_xscale = ds_list_create();
+ds_list_add(direction_and_xscale, "down");
+ds_list_add(direction_and_xscale, 2);
+punch = spr_punch_right;
+base = spr_dude_walking;
+punch_index = 0;
+punch_power = 0;
+max_punch_power = 10;
