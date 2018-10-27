@@ -24,5 +24,5 @@ draw_set_alpha(($FFFFFFFF >> 24) / $ff);
 /// @DnDHash : 28D3535B
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" ""209X: The death of billions""
-draw_text(x + 0, y + 0, string("209X: The death of billions") + "");
+/// @DnDArgument : "caption" ""The world is at peace""
+draw_text(x + 0, y + 0, string("The world is at peace") + "");

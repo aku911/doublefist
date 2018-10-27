@@ -3,6 +3,7 @@ if(abs(rightstick) > 0.1 && can_punch)
 {
 	can_punch = 0;
 	is_punching = 1;
+	instance_create_layer(x, y, "Instances", dude_attack);
 
 	if(rightstick > 0)
 	{

@@ -9,5 +9,5 @@ if (b_xcoord <= -973)
 if (b_xcoord <= -487 && instance_number(objFader) == 0)
 {
 	in = instance_create_layer(0, 0, layer_get_id("fade_layer"), objFader);
-	in.bgmusic = bgmusic;
+	in.music = bgmusic;
 }

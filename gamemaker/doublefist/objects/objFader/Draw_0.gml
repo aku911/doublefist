@@ -2,7 +2,10 @@ a = clamp(a+(fade*0.015), 0, 1);
 
 if  (a ==1)
 {
-	audio_stop_sound(bgmusic);
+	if (music != noone) 
+	{
+		audio_stop_sound(music);
+	}
 	room_goto_next();
 	fade =-1;
 }

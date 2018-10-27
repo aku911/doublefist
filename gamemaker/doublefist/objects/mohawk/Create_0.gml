@@ -19,3 +19,16 @@ HP = 5;
 /// @DnDArgument : "expr" "1.5"
 /// @DnDArgument : "var" "movement_speed"
 movement_speed = 1.5;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 6578172B
+/// @DnDArgument : "expr" "-8"
+/// @DnDArgument : "var" "knockback_speed"
+knockback_speed = -8;
+
+/// @DnDAction : YoYo Games.Movement.Set_Speed
+/// @DnDVersion : 1
+/// @DnDHash : 3DA075CF
+/// @DnDArgument : "speed" "movement_speed"
+speed = movement_speed;
