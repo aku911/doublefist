@@ -1,0 +1,1 @@
+script_execute(MovingCutscene, "Background", noone, "vertical", 1.5);

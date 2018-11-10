@@ -2,7 +2,7 @@
 {
     "name": "openingcutscene",
     "id": "c2637582-33b1-41be-9314-94819fe659b7",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
