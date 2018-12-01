@@ -1,12 +1,15 @@
 vspeed = 0;
 hspeed = 0;
+depth = -y;
 
 // Set a variable that means if we should change our current sprites
 should_change_base = false;
+colliding_with_door = false;
 
-// First figure out our speed.
+// figure out if about to run into door
 y_speed = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axislh) : 0;
 x_speed = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axislv) : 0;
+ 
 
 if (abs(x_speed) > 0.1 || abs(y_speed) > 0.1)
 {
@@ -23,6 +26,7 @@ else
 	image_speed = 0;
 	image_index = 0;
 }
+
 
 // Then figure out our right stick
 rightstick = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axisrh) : 0;
@@ -86,24 +90,30 @@ else
 	self.punch_power = 0;
 }
 
-// Horizontal collision
-if (place_meeting(x + hspeed, y, wall)) 
+script_execute(CollisionDude, dojo_wall);
+script_execute(CollisionDude, wall);
+
+if (place_meeting(x, y + vspeed, obj_inside_door)) 
 {
-	while(!place_meeting(x + sign(hspeed), y, wall))
-	{
-		x += sign(hspeed);
-	}
 	hspeed = 0;
-}
+	vspeed = 2;
 
-// Vertical collision
-if (place_meeting(x, y + vspeed, wall)) 
-{
-	while(!place_meeting(x, y + vspeed, wall))
+	fade_layer = layer_get_id("fade_layer");
+	fade_inst = layer_has_instance(fade_layer, objFader);
+	if (((y + sprite_height / 2) > room_height) && !fade_inst) 
 	{
-		y += sign(vspeed);
+		instance_create_layer(0, 0, layer_get_id("fade_layer"), objFader);
 	}
-	vspeed = 0;
+}
+if (place_meeting(x,y,mohawk) && !being_injured && self.punch_index < 2)
+{
+	being_injured = true;
+	health_alpha = 1;
+	health -= 2;
+	alarm_set(0, room_speed * 3)
 }
 
-
+if (health <= 0) 
+{
+	instance_create_layer(0, 0, layer_get_id("fade_layer"), obj_death_fader);
+}	

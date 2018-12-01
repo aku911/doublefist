@@ -1,19 +1,24 @@
 a = clamp(a+(fade*0.015), 0, 1);
 
-if  (a ==1)
+if  (a == 1 && !changed_rooms)
 {
 	if (music != noone) 
 	{
 		audio_stop_sound(music);
 	}
-	if (room_exists(room_next(room))) 
+	if (next_room == noone && room_exists(room_next(room))) 
 	{
+		current_room = room_get_name(room)
 		room_goto_next();
+		current_room = room_get_name(room)
+		changed_rooms = true;
 	} 
-	else 
+	else if (room_exists(next_room))
 	{
-		instance_destroy();
+		room_goto(next_room);
+		changed_rooms = true;
 	}
+	
 	
 	fade =-1;
 }
