@@ -8,6 +8,17 @@ if (health > 0)
 	if (punch != noone)
 	{
 		draw_sprite_ext(punch, punch_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
+		// Debug code for punching
+	//	xoffset = self.x - (image_xscale * sprite_get_xoffset(base));
+	//	yoffset = self.y - (image_yscale * sprite_get_yoffset(base));
+	//	left = (sprite_get_bbox_left(punch) * image_xscale) + xoffset;
+	//	right = (sprite_get_bbox_right(punch) * image_xscale) + xoffset;
+	//	bottom = (sprite_get_bbox_bottom(punch) * image_yscale) + yoffset;
+	//	top = (sprite_get_bbox_top(punch) * image_yscale) + yoffset;		
+	//	current_color = draw_get_colour()
+	//	draw_set_colour(c_yellow);
+	//	draw_rectangle(left, top, right, bottom, true);
+	//	draw_set_colour(current_color);
 	}
 
 	if (being_injured)

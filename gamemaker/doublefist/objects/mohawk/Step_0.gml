@@ -1,25 +1,52 @@
-var l1806AF3C_0 = false;
-l1806AF3C_0 = instance_exists(dude);
-if(l1806AF3C_0)
+dude_exists = false;
+dude_exists = instance_exists(dude);
+dude_in_room = noone
+if(dude_exists)
 {
-	direction = point_direction(x, y, dude.x, dude.y);
+	dude_in_room = instance_find(dude, 0)
+	direction = point_direction(x, y, dude_in_room.x, dude_in_room.y);
 }
 
-script_execute(Face, spr_mo_down, spr_mo_right, spr_mo_up, spr_mo_left);
+direction_and_scale = ComputeDirectionAndScale();
+local_direction = ds_list_find_value(direction_and_scale, 0);
+
+switch (local_direction) 
+{
+	case "down":
+		self.base = spr_mo_down;
+		self.punch = spr_mo_up_down_punch_right;
+		self.punch_index = 0;
+		break;
+
+	case "up":
+		self.base = spr_mo_up;
+		self.punch = spr_mo_up_down_punch_right;
+		self.punch_index = 0;
+		break;
+
+	case "left":
+		self.base = spr_mo_left;
+		self.punch = spr_mo_right_punch_left;
+		self.punch_index = 0;
+		break;
+	
+	
+	case "right":
+		self.base = spr_mo_right;
+		self.punch = spr_mo_right_punch_right;
+		self.punch_index = 0;
+		break;
+}
 
 // Check for collisions with the dude
-if (dude.punch_index >= 2) 
+if (dude_in_room.punch_index >= 2) 
 {
-	left = sprite_get_bbox_left(dude.punch) + dude.x;
-	right = sprite_get_bbox_right(dude.punch) + dude.x;
-	bottom = sprite_get_bbox_bottom(dude.punch) + dude.y;
-	top = sprite_get_bbox_top(dude.punch) + dude.y;
-	instance = collision_rectangle(left, top, right, bottom, mohawk, false, false);
-	if (instance == self)
+	instance = CollisionSprite(dude_in_room, dude_in_room.punch, mohawk);
+    if (instance == self)
 	{
 		if (speed != knockback_speed) 
 		{
-			HP += -dude.punch_power;
+			HP += -dude_in_room.punch_power;
 		}
 
 		// Knock our dude back

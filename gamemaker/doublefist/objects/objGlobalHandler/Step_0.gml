@@ -1,13 +1,14 @@
-/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
-/// @DnDVersion : 1
-/// @DnDHash : 00845A15
-var l00845A15_0;
-l00845A15_0 = keyboard_check_pressed(vk_space);
-if (l00845A15_0)
+space_hit = keyboard_check_pressed(vk_space);
+abutton_hit = gamepad_button_check_pressed(0, gp_face1);
+if (space_hit || abutton_hit)
 {
-	/// @DnDAction : YoYo Games.Rooms.Next_Room
-	/// @DnDVersion : 1
-	/// @DnDHash : 12E60583
-	/// @DnDParent : 00845A15
-	room_goto_next();
+	if (room == death) 
+	{
+		audio_stop_all();
+		room_goto(Dojo);
+	} 
+	else 
+	{
+		room_goto_next();
+	}
 }
