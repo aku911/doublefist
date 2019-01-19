@@ -71,6 +71,22 @@
             }
         },
         {
+            "Key": "0cd8b84a-1285-44eb-8295-312450add646",
+            "Value": {
+                "id": "e8748768-ea53-49a9-8b9e-36b60194a5e5",
+                "resourcePath": "extensions\\Isometric_Timbered_House\\Isometric_Timbered_House.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "0d084d26-8f3c-40cf-a5f4-c3451a48dd60",
+            "Value": {
+                "id": "a18319ad-67a1-4f03-8e9b-13955482b32c",
+                "resourcePath": "sprites\\spr_temple_door\\spr_temple_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d1aee6b-6c3b-42c0-bad7-8bbbc9b077a3",
             "Value": {
                 "id": "f1f854c8-3c9b-4120-8a99-47def3148c45",
@@ -100,6 +116,14 @@
                 "id": "bf5e5984-e29f-4955-9350-48eadecb8eb9",
                 "resourcePath": "objects\\objGlobalHandler\\objGlobalHandler.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "15e128a4-2792-4e4c-993c-cfea5f0727c3",
+            "Value": {
+                "id": "00aef634-cfd3-431b-8ae3-ca6feb5c3008",
+                "resourcePath": "sprites\\spr_tileset_desert\\spr_tileset_desert.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -175,10 +199,10 @@
             }
         },
         {
-            "Key": "43393acd-fe47-4276-8fad-dc85431f10da",
+            "Key": "3c498cc8-2608-4b27-b679-e875e86615c2",
             "Value": {
-                "id": "685e9342-5dab-4eb5-b5cc-4c23775e8a88",
-                "resourcePath": "sounds\\sound3\\sound3.yy",
+                "id": "5de3c9eb-7203-42c7-87f8-c17e6446eb2a",
+                "resourcePath": "sounds\\snd_oof\\snd_oof.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -268,6 +292,22 @@
                 "id": "14d85290-0009-4980-825e-4b5185adaf39",
                 "resourcePath": "views\\58152e50-66ad-4a54-88ae-e0d977b8a2fd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5b6b9381-6e09-457d-b512-766059fafc9a",
+            "Value": {
+                "id": "12d07015-534a-4fe8-9756-94e482ce9eb5",
+                "resourcePath": "rooms\\town\\town.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "5cf1808b-795c-4b0b-878f-92f163d05536",
+            "Value": {
+                "id": "797efd2a-d302-46a8-a67a-de56bac02a5e",
+                "resourcePath": "tilesets\\desert_tileset\\desert_tileset.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -500,6 +540,14 @@
                 "id": "6acc8b5b-3545-4e5d-bf36-e8d943b91485",
                 "resourcePath": "scripts\\HandleLeftStick\\HandleLeftStick.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8dc04b60-d50b-4339-9919-972c3f495a92",
+            "Value": {
+                "id": "ec1a3682-5a16-4bdb-98fc-d1f91058a17f",
+                "resourcePath": "objects\\obj_temple_door\\obj_temple_door.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -804,6 +852,14 @@
                 "id": "ea51940c-5754-408e-9f8f-8cf731296c23",
                 "resourcePath": "scripts\\CollisionDude\\CollisionDude.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "db5902f7-e532-4e0c-8c77-7e483f8caf34",
+            "Value": {
+                "id": "982edac0-1863-4b53-9272-1614efc2b765",
+                "resourcePath": "sounds\\snd_waa\\snd_waa.yy",
+                "resourceType": "GMSound"
             }
         },
         {

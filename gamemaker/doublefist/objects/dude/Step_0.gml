@@ -84,6 +84,10 @@ switch (local_direction)
 if (self.punch_index == 2) 
 {
 	self.punch_power = local_punch_index == 2 ? max(4, self.punch_power - 4) : self.max_punch_power;
+	if (local_punch_index != 2) 
+	{
+		audio_play_sound(snd_waa, 0, false);
+	}
 }
 else 
 {

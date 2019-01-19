@@ -13,28 +13,24 @@ local_direction = ds_list_find_value(direction_and_scale, 0);
 switch (local_direction) 
 {
 	case "down":
-		self.base = spr_mo_down;
-		self.punch = spr_mo_up_down_punch_right;
-		self.punch_index = 0;
+		self.base = spr_mo_up;
+		self.punch = hspeed > 0 ? spr_mo_up_down_punch_right : spr_mo_up_down_punch_left;
 		break;
 
 	case "up":
-		self.base = spr_mo_up;
-		self.punch = spr_mo_up_down_punch_right;
-		self.punch_index = 0;
+		self.base = spr_mo_down;
+		self.punch = hspeed > 0 ? spr_mo_up_down_punch_right : spr_mo_up_down_punch_left;
 		break;
 
 	case "left":
 		self.base = spr_mo_left;
 		self.punch = spr_mo_right_punch_left;
-		self.punch_index = 0;
 		break;
 	
 	
 	case "right":
 		self.base = spr_mo_right;
 		self.punch = spr_mo_right_punch_right;
-		self.punch_index = 0;
 		break;
 }
 
@@ -54,6 +50,7 @@ if (dude_in_room.punch_index >= 2)
 
 		// Punch sound
 		audio_play_sound(snd_punch, 0, false);
+		audio_play_sound(snd_oof, 1, false);
 
 		if(HP <= 0)
 		{
@@ -62,4 +59,28 @@ if (dude_in_room.punch_index >= 2)
 
 		alarm_set(0, room_speed / 2);
 	}
+}
+
+
+// Check for distance to dude and change our punch index
+distance = distance_to_object(dude);
+spr_width = sprite_get_width(spr_mo_down) * 2;
+if (distance < spr_width)
+{
+	punch_index += punch_direction;
+	if (punch_index > 2) 
+	{
+		punch_index = 2;
+		punch_direction = -punch_direction;
+	} 
+	else if (punch_index < 0) 
+	{
+		punch_index = 0;
+		punch_direction = -punch_direction;
+	}
+		
+} 
+else 
+{
+	punch_index = 0;	
 }
