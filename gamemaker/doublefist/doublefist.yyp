@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "514206ba-c312-47e0-85e8-d256d20d90a6",
+            "Value": {
+                "id": "b90aab55-ce6b-4ba4-a2b8-be3b9d782e46",
+                "resourcePath": "sprites\\spr_noise\\spr_noise.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5152fa08-f42d-4e13-a22f-748d9b755af6",
             "Value": {
                 "id": "b4d26a25-3f46-42f2-b50d-f296a2a15ae8",
