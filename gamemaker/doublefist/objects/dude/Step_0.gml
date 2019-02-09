@@ -2,6 +2,9 @@ vspeed = 0;
 hspeed = 0;
 depth = -y;
 
+// Center view on the player
+camera_set_view_pos(view_camera[0], x - (view_wport[0] / 2), y - (view_hport[0] / 2));
+
 // Set a variable that means if we should change our current sprites
 should_change_base = false;
 colliding_with_door = false;
