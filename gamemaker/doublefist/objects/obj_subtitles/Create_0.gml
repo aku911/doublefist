@@ -1,0 +1,10 @@
+depth = -1000;
+messages = [];
+text_speed = 0;
+message_draw = "";
+draw_index = 0;
+message_index = 0;
+head_sprites = [];
+step_index = 0;
+message_end = 0;
+waiting_for_a = false;

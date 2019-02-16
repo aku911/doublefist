@@ -1,4 +1,6 @@
-/// @DnDAction : YoYo Games.Rooms.Next_Room
-/// @DnDVersion : 1
-/// @DnDHash : 714C4069
-room_goto_next();
+grandpa = instance_create_layer(x + 0, y + 0, "Instances", obj_grandpa);
+with (grandpa)
+{
+	speed = 1;
+	direction = 270;
+}
