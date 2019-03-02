@@ -5,6 +5,12 @@ depth = -y;
 // Center view on the player
 camera_set_view_pos(view_camera[0], x - (view_wport[0] / 2), y - (view_hport[0] / 2));
 
+// Move backgrounds as we move
+var _cam_x = camera_get_view_x(view_camera[0]);
+layer_x("sky", _cam_x * 0.25); 
+layer_x("mountains", _cam_x * 0.5); 
+
+
 // Set a variable that means if we should change our current sprites
 should_change_base = false;
 colliding_with_door = false;
