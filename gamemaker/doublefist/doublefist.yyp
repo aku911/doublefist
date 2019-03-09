@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "00db892a-2435-4d0a-8c26-c6f2dd8cb730",
+            "Value": {
+                "id": "042fb67e-6317-4958-b4a2-1bd7058daf48",
+                "resourcePath": "sprites\\spr_inside_dojo_door\\spr_inside_dojo_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0221a911-557d-4834-9fa4-a10e229ec6d5",
             "Value": {
                 "id": "533f35ba-bd6b-481c-b875-919b3e839fb0",
@@ -663,6 +671,14 @@
             }
         },
         {
+            "Key": "872527a8-634b-47c0-88ee-485c14e2b72c",
+            "Value": {
+                "id": "8cfb6d01-07b5-4ba0-8054-19e4021a68d7",
+                "resourcePath": "views\\872527a8-634b-47c0-88ee-485c14e2b72c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "89289716-f293-4cb5-86a3-ea21d6172444",
             "Value": {
                 "id": "270f13cd-760b-4038-8a7c-be311cb0868f",
@@ -820,6 +836,14 @@
                 "id": "dc2471cc-dba3-4542-9afb-a37b59becc76",
                 "resourcePath": "rooms\\textcutscene2\\textcutscene2.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a57d01f4-4112-41f8-830d-39577243cf8e",
+            "Value": {
+                "id": "f71f49fb-e648-4bfe-8f2b-3bed0ebdc0aa",
+                "resourcePath": "scripts\\CheckForStairs\\CheckForStairs.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1055,6 +1079,14 @@
             }
         },
         {
+            "Key": "d4067568-2fd5-416c-b67f-65a728264e00",
+            "Value": {
+                "id": "dc385867-511f-438e-834d-74de53ecf958",
+                "resourcePath": "sprites\\spr_inside_dojo_floor\\spr_inside_dojo_floor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d645fa99-ff6d-4bbc-8724-7976872ef3e2",
             "Value": {
                 "id": "130536a0-95dc-4f40-bf69-ed3c5dcc078a",
@@ -1063,19 +1095,19 @@
             }
         },
         {
-            "Key": "d6cde9cc-0456-4677-92db-d539c927d7f7",
-            "Value": {
-                "id": "fa0d8832-e609-4924-9bd9-8f52228abb6c",
-                "resourcePath": "rooms\\Dojo\\Dojo.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "d7cde45e-2dd4-48e9-8df8-6cab9f41b169",
             "Value": {
                 "id": "00d2e40b-55ed-4530-92bb-09a88d590821",
                 "resourcePath": "objects\\wall\\wall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d8f8a20e-21fa-4b00-911c-05344ebc24bd",
+            "Value": {
+                "id": "85bbce71-1036-4580-9935-204c9c02e7c9",
+                "resourcePath": "rooms\\insidedojo\\insidedojo.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1227,7 +1259,8 @@
         "7705e461-d3a3-4e84-9148-2a992ee187c8",
         "db4e59db-e682-404f-9a0b-f36c9b0954ae",
         "072f0927-29fc-40a8-9179-864754307d7f",
-        "9a9aaf33-fb2f-468a-be16-69bad7405071"
+        "9a9aaf33-fb2f-468a-be16-69bad7405071",
+        "a57d01f4-4112-41f8-830d-39577243cf8e"
     ],
     "tutorial": ""
 }

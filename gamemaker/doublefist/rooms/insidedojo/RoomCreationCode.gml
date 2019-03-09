@@ -1,0 +1,1 @@
+camera_set_begin_script(view_camera[0], CheckForStairs)
