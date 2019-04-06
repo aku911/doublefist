@@ -1,9 +1,8 @@
-draw_sprite_ext(spr_shadow, 0, x - 1, y -1, image_xscale, image_yscale, 0, c_white, 1);
 if (health > 0)
 {
-	if (base != noone) 
+	if (sprite_index != noone) 
 	{
-		draw_sprite_ext(base, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
+		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
 	}
 
 	if (punch != noone)
@@ -24,7 +23,7 @@ if (health > 0)
 
 	if (being_injured)
 	{
-	    base_width = sprite_get_width(base);
+	    base_width = sprite_get_width(sprite_index);
 	    health_width = sprite_get_width(spr_health_bar);
 		health_lost_p = (max_health - health) / max_health;
 		number_frames = sprite_get_number(spr_health_bar) -1;

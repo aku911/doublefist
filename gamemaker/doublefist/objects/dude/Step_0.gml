@@ -1,6 +1,6 @@
+event_inherited();
 vspeed = 0;
 hspeed = 0;
-depth = -y;
 
 // Center view on the player
 camera_set_view_pos(view_camera[0], x - (view_wport[0] / 2), y - (view_hport[0] / 2));
@@ -58,7 +58,7 @@ local_punch_index = self.punch_index;
 switch (local_direction) 
 {
 	case "down":
-		self.base = spr_dude_walking;
+		self.sprite_index = spr_dude_walking;
 		self.punch = rightstick > 0 ? spr_punch_right : spr_punch_left;
 		self.punch_index = 0;
 		if (should_change_punch) 
@@ -68,7 +68,7 @@ switch (local_direction)
 		break;
 
 	case "up":
-		self.base = spr_dude_walking;
+		self.sprite_index = spr_dude_walking;
 		self.punch = rightstick > 0 ? spr_punch_right : spr_punch_left;
 		self.punch_index = 0;
 		if (should_change_punch) 
@@ -79,7 +79,7 @@ switch (local_direction)
 
 	case "left":
 	case "right":
-		self.base = should_change_punch ? spr_right_base : spr_walking_right;
+		self.sprite_index = should_change_punch ? spr_right_base : spr_walking_right;
 		self.punch = should_change_punch ? spr_right_punch : noone;
 		self.punch_index = 0;
 		if (should_change_punch) 

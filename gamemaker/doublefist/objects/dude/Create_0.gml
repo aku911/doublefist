@@ -13,7 +13,6 @@ direction_and_xscale = ds_list_create();
 ds_list_add(direction_and_xscale, "down");
 ds_list_add(direction_and_xscale, 1);
 punch = spr_punch_right;
-base = spr_dude_walking;
 punch_index = 0;
 punch_power = 0;
 max_punch_power = 10;

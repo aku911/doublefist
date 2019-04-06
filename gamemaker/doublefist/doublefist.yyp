@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "1b674750-ea87-451b-bfce-6e235cb3fd0e",
+            "Value": {
+                "id": "2a0a1a4f-b7ea-43fc-ba69-a24f2483b8c0",
+                "resourcePath": "sprites\\spr_rocks_and_buildings\\spr_rocks_and_buildings.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1b8a2d81-91c7-41a9-9a44-c4cbb62c20d1",
             "Value": {
                 "id": "0ecccc10-3c5f-4fe7-a5bf-d88ca5a9d612",
@@ -407,6 +415,14 @@
             }
         },
         {
+            "Key": "5b04f8e7-5329-447c-9fb9-322b644d2dea",
+            "Value": {
+                "id": "16972f12-4760-4a80-bc55-7c3c706f4811",
+                "resourcePath": "objects\\obj_mountains\\obj_mountains.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5b6b9381-6e09-457d-b512-766059fafc9a",
             "Value": {
                 "id": "12d07015-534a-4fe8-9756-94e482ce9eb5",
@@ -420,6 +436,14 @@
                 "id": "efa07926-7ef5-4c22-86fa-b77b92b5452f",
                 "resourcePath": "sounds\\snd_desert_wind\\snd_desert_wind.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "5c08bbbf-48bc-4f57-ae88-f4d50a7d2a24",
+            "Value": {
+                "id": "8af7da31-788b-4333-a432-9e61e69951c7",
+                "resourcePath": "sprites\\spr_town_mountains\\spr_town_mountains.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -527,6 +551,14 @@
             }
         },
         {
+            "Key": "6e54e304-f3d9-494c-b48a-b53f86cd8755",
+            "Value": {
+                "id": "5a3cdd18-ec99-4dfe-8695-e6e291e7b188",
+                "resourcePath": "objects\\obj_shadow_draw\\obj_shadow_draw.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6f5508be-1285-4215-be6b-5e9d3bd7e6eb",
             "Value": {
                 "id": "cdc64d5c-4e81-4d6c-978b-918c933a45ea",
@@ -548,6 +580,14 @@
                 "id": "84c903bc-d567-40dc-b54d-a2ba5238ecfc",
                 "resourcePath": "views\\70fc1d59-9ea5-436f-a91e-273ea7b244b0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "710172f7-d235-465e-99a3-3cce7bdbfcaf",
+            "Value": {
+                "id": "63e1fb2b-b966-4ed1-919b-f82f25ca8ede",
+                "resourcePath": "objects\\obj_rocks_and_buildings\\obj_rocks_and_buildings.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -772,6 +812,14 @@
                 "id": "ffda48da-805f-4f12-8549-3b8adef0e461",
                 "resourcePath": "sprites\\spr_right_base\\spr_right_base.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9432b504-fd2d-450b-9bea-d322c2d71e32",
+            "Value": {
+                "id": "1f02cf5b-c520-4c0f-b6d8-6f7ac106c4a1",
+                "resourcePath": "objects\\obj_has_shadows\\obj_has_shadows.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1012,6 +1060,14 @@
                 "id": "a29bce1e-c278-4059-8199-57e7bfff15bd",
                 "resourcePath": "rooms\\openingcutscene\\openingcutscene.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "c8092aeb-edf3-4883-9956-fe08a081f4cf",
+            "Value": {
+                "id": "83cc71fe-74b6-426a-9d62-1265cc7ec598",
+                "resourcePath": "objects\\obj_has_depth\\obj_has_depth.yy",
+                "resourceType": "GMObject"
             }
         },
         {

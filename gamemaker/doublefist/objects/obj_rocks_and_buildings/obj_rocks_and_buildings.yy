@@ -1,14 +1,23 @@
 {
-    "id": "e84b99d4-03e8-4d3a-af3e-dd2edb123416",
+    "id": "710172f7-d235-465e-99a3-3cce7bdbfcaf",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_dojo_outside_roof",
+    "name": "obj_rocks_and_buildings",
     "eventList": [
-        
+        {
+            "id": "08cd4d0e-178a-4f54-a242-dcc41f46a2b6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "710172f7-d235-465e-99a3-3cce7bdbfcaf"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "9432b504-fd2d-450b-9bea-d322c2d71e32",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "4ca80f63-855d-4562-a436-a398b8353535",
+    "spriteId": "1b674750-ea87-451b-bfce-6e235cb3fd0e",
     "visible": true
 }
