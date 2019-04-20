@@ -37,14 +37,8 @@ else
 }
 
 
-// Then figure out our right stick
-rightstick = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axisrh) : 0;
-should_change_punch = false;
-if(abs(rightstick) > 0.1)
-{
-	should_change_punch = true;
-}
-
+// Use the right stick to compute the sprite index
+var rightstick = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axisrh) : 0;
 
 if (should_change_base) 
 {
@@ -53,47 +47,29 @@ if (should_change_base)
 
 local_direction = ds_list_find_value(self.direction_and_xscale, 0);
 image_xscale = ds_list_find_value(self.direction_and_xscale, 1);
-local_punch_index = self.punch_index;
+var old_punch_index = self.punch_index;
+var new_punch_index = script_execute(ComputePunchIndex, rightstick);
+var base_index_offset = rightstick > 0 ? 3 : 0;
 
 switch (local_direction) 
 {
+	case "up":
 	case "down":
-		self.sprite_index = spr_dude_walking;
-		self.punch = rightstick > 0 ? spr_punch_right : spr_punch_left;
-		self.punch_index = 0;
-		if (should_change_punch) 
-		{
-			self.punch_index = script_execute(ComputePunchIndex, rightstick);
-		}
+		self.sprite_index = spr_down_array[base_index_offset + new_punch_index];
 		break;
 
-	case "up":
-		self.sprite_index = spr_dude_walking;
-		self.punch = rightstick > 0 ? spr_punch_right : spr_punch_left;
-		self.punch_index = 0;
-		if (should_change_punch) 
-		{
-			self.punch_index = script_execute(ComputePunchIndex, rightstick);
-		}
-		break;
 
 	case "left":
 	case "right":
-		self.sprite_index = should_change_punch ? spr_right_base : spr_walking_right;
-		self.punch = should_change_punch ? spr_right_punch : noone;
-		self.punch_index = 0;
-		if (should_change_punch) 
-		{
-			self.punch_index = script_execute(ComputePunchIndex, rightstick);
-		}
+		self.sprite_index = spr_walking_right;
 		break;
 }
 
 // Adjust punch power if we're at the same
-if (self.punch_index == 2) 
+if (new_punch_index == 2) 
 {
-	self.punch_power = local_punch_index == 2 ? max(4, self.punch_power - 4) : self.max_punch_power;
-	if (local_punch_index != 2) 
+	self.punch_power = new_punch_index == 2 ? max(4, self.punch_power - 4) : self.max_punch_power;
+	if (old_punch_index != 2) 
 	{
 		audio_play_sound(snd_waa, 0, false);
 	}
@@ -102,6 +78,8 @@ else
 {
 	self.punch_power = 0;
 }
+
+self.punch_index = new_punch_index;
 
 script_execute(CollisionDude, dojo_wall);
 script_execute(CollisionDude, wall);

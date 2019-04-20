@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_dojo_outside_roof",
     "eventList": [
-        
+        {
+            "id": "9cf74337-7766-4a1d-934c-4effdb97e8f9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "e84b99d4-03e8-4d3a-af3e-dd2edb123416"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
