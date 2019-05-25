@@ -1,1 +1,1 @@
-DrawShadow(sprite_index, image_index, x, y);
+DrawShadow(sprite_index, image_index, x, y, image_xscale);

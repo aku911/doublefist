@@ -13,7 +13,6 @@ layer_x("mountains", _cam_x * 0.5);
 
 // Set a variable that means if we should change our current sprites
 should_change_base = false;
-colliding_with_door = false;
 
 // figure out if about to run into door
 y_speed = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axislh) : 0;
@@ -61,7 +60,14 @@ switch (local_direction)
 
 	case "left":
 	case "right":
-		self.sprite_index = spr_walking_right;
+		if (rightstick < 0 && new_punch_index > 0) {
+			// Always left when punching left
+			image_xscale = -abs(image_xscale);
+		} else if (rightstick > 0 && new_punch_index > 0) {
+			// Always right when punching right
+			image_xscale = abs(image_xscale);
+		}
+		self.sprite_index = spr_right_array[base_index_offset + new_punch_index];
 		break;
 }
 
@@ -83,6 +89,7 @@ self.punch_index = new_punch_index;
 
 script_execute(CollisionDude, dojo_wall);
 script_execute(CollisionDude, wall);
+script_execute(CollisionDude, collision);
 
 if (place_meeting(x, y + vspeed, obj_inside_door)) 
 {
