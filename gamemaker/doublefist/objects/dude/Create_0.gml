@@ -29,3 +29,4 @@ spr_right_array[2] = spr_walking_right_2;
 spr_right_array[3] = spr_walking_right;
 spr_right_array[4] = spr_walking_right_1;
 spr_right_array[5] = spr_walking_right_2;
+gamepad = 0;

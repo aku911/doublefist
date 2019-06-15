@@ -223,6 +223,22 @@
             }
         },
         {
+            "Key": "24638cfa-8e7b-438c-9cf8-ed6473f447ef",
+            "Value": {
+                "id": "ddb228ad-e2f0-4b22-bf9f-4b76a9b814e0",
+                "resourcePath": "views\\24638cfa-8e7b-438c-9cf8-ed6473f447ef.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2acf4171-4045-447b-8c63-b000d52f1d66",
+            "Value": {
+                "id": "76225290-0290-4263-80af-5f03a0438003",
+                "resourcePath": "objects\\player\\player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2b7e9548-8824-4c37-9e6e-b7aa7f0b50f8",
             "Value": {
                 "id": "5766769a-c2e4-4442-aa66-fc6f569927c5",
@@ -572,6 +588,14 @@
                 "id": "5a3cdd18-ec99-4dfe-8695-e6e291e7b188",
                 "resourcePath": "objects\\obj_shadow_draw\\obj_shadow_draw.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6ec4c553-20f8-4f18-a6f4-671530b2716e",
+            "Value": {
+                "id": "510b6f39-7ce8-49b0-9845-86381ceb3197",
+                "resourcePath": "sprites\\spr_dd_down_neutral\\spr_dd_down_neutral.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1052,6 +1076,14 @@
                 "id": "d39bacd1-4a3f-40c9-939a-95c6e832edda",
                 "resourcePath": "sprites\\spr_gray_brick\\spr_gray_brick.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bbc200ec-1a53-441e-9181-5e152d16a4e2",
+            "Value": {
+                "id": "8a2552f4-6c4a-4a56-b415-d9d5ccca2d32",
+                "resourcePath": "objects\\Dudett\\Dudett.yy",
+                "resourceType": "GMObject"
             }
         },
         {

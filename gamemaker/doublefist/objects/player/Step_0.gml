@@ -15,8 +15,8 @@ layer_x("mountains", _cam_x * 0.5);
 should_change_base = false;
 
 // figure out if about to run into door
-y_speed = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axislh) : 0;
-x_speed = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axislv) : 0;
+y_speed = gamepad_is_connected(gamepad) ? gamepad_axis_value(gamepad, gp_axislh) : 0;
+x_speed = gamepad_is_connected(gamepad) ? gamepad_axis_value(gamepad, gp_axislv) : 0;
  
 
 if (abs(x_speed) > 0.1 || abs(y_speed) > 0.1)
@@ -37,7 +37,7 @@ else
 
 
 // Use the right stick to compute the sprite index
-var rightstick = gamepad_is_connected(0) ? gamepad_axis_value(0, gp_axisrh) : 0;
+var rightstick = gamepad_is_connected(gamepad) ? gamepad_axis_value(gamepad, gp_axisrh) : 0;
 
 if (should_change_base) 
 {
