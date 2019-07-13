@@ -115,3 +115,20 @@ if (health <= 0)
 {
 	instance_create_layer(0, 0, layer_get_id("fade_layer"), obj_death_fader);
 }	
+
+var tracking_player = instance_find(tracker_obj, 0)
+if (tracking_player != noone) {
+	tracking_player.sprite_index = sprite_index;
+	tracking_player.image_index = image_index;
+	tracking_player.image_xscale = image_xscale;
+	tracking_player.image_yscale = image_yscale;
+	tracking_player.vspeed = vspeed;
+	tracking_player.hspeed = hspeed;
+	
+	if (vspeed == 0) {
+		tracking_player.x = x;
+	}
+	if (hspeed == 0) {
+		tracking_player.y = y;
+	}
+}

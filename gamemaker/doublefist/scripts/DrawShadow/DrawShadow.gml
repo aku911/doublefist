@@ -6,7 +6,7 @@ var spr_x = argument2;
 var spr_y = argument3;
 var x_scale = argument4;
 
-show_debug_message("Drawing sprite shadow" + string(spr) + " at " + string(spr_x) + "," + string(spr_y));
+// show_debug_message("Drawing sprite shadow" + string(spr) + " at " + string(spr_x) + "," + string(spr_y));
 
 var sx = 7;
 var sy = -(spr_height / 2);

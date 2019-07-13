@@ -1,6 +1,8 @@
 1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
     "option_gameguid": "167367d5-7415-4d7d-8752-7fd16fa9da6d",
-    "option_game_speed": 30
+    "option_game_speed": 30,
+    "option_lastchanged": "22 June 2019 13:46:39",
+    "option_author": "Rich & Mikey Chiodo"
 }←be5f1418-b31b-48af-a023-f04cdf6e5121|{
     "textureGroups": {
         "Additions": [
