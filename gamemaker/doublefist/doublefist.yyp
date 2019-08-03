@@ -63,14 +63,6 @@
             }
         },
         {
-            "Key": "04194709-d944-4dd5-9489-da6d226f0629",
-            "Value": {
-                "id": "9fc4eb36-49a0-4863-a258-2c0e1ddef181",
-                "resourcePath": "objects\\obj_opening_cutscene\\obj_opening_cutscene.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "0689ac79-c8cc-432b-a7fb-13ad1dca1bc0",
             "Value": {
                 "id": "84885abc-19a1-4249-9246-2b2f936a388d",
@@ -231,6 +223,14 @@
             }
         },
         {
+            "Key": "1e2d4be2-b8f1-4c9e-8a69-8597a42c6f85",
+            "Value": {
+                "id": "ef71780c-e20d-4ebf-8379-b9fad529254e",
+                "resourcePath": "views\\1e2d4be2-b8f1-4c9e-8a69-8597a42c6f85.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2073b967-cacc-4f27-9020-4a72fda74084",
             "Value": {
                 "id": "91ff9bbe-17f0-40d7-af1d-202e3852c84c",
@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "42664d1a-d835-4115-af52-aa0ea510b25a",
+            "Value": {
+                "id": "89c05737-6bab-4491-8b59-17881f033d2c",
+                "resourcePath": "objects\\objCutSceneParent\\objCutSceneParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "44b57381-3dad-4d6d-ab3d-141896dff91c",
             "Value": {
                 "id": "b910eb92-3ee4-4ce8-9e58-911ae72b1710",
@@ -396,6 +404,14 @@
                 "id": "3ad7f3ed-62d3-4f10-97cd-3fe7b3ccc833",
                 "resourcePath": "sprites\\spr_dd_walking_right\\spr_dd_walking_right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4b42880c-5976-4d89-afc4-fbaa1d0e8856",
+            "Value": {
+                "id": "9a5e5c15-6952-41b1-a3bd-4da0fe92ecd7",
+                "resourcePath": "views\\4b42880c-5976-4d89-afc4-fbaa1d0e8856.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -508,6 +524,14 @@
                 "id": "2bebcb31-4c7f-4a1f-87e9-f08eb51e9009",
                 "resourcePath": "views\\589886b7-307b-4d27-9402-2d86855f2fba.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "58e70b33-bd98-4b88-89b8-51fcfdeb3aab",
+            "Value": {
+                "id": "5d68b2ed-e0fe-4ff0-bce5-3f9876813c72",
+                "resourcePath": "objects\\obj_townCamera\\obj_townCamera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -807,6 +831,14 @@
             }
         },
         {
+            "Key": "8470385f-c09c-402d-8516-86ecc7f30ae6",
+            "Value": {
+                "id": "77992816-55c3-4bdb-8079-b772d663b292",
+                "resourcePath": "views\\8470385f-c09c-402d-8516-86ecc7f30ae6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "84870aa7-6cb9-4b80-a2f7-64e61c89f08c",
             "Value": {
                 "id": "9a02a228-482d-4997-ab20-951dc43cf472",
@@ -1047,14 +1079,6 @@
             }
         },
         {
-            "Key": "a76390d5-39dd-46f8-ac46-d5a47349a8e4",
-            "Value": {
-                "id": "c62536ae-58af-44ce-959c-b698f26b1ee6",
-                "resourcePath": "rooms\\towncutscene\\towncutscene.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "d30ef4dc-41ff-4c30-ae69-e018cd13a056",
@@ -1279,6 +1303,14 @@
             }
         },
         {
+            "Key": "d23a2810-8f5d-4d0c-a7da-df0b86f0f44d",
+            "Value": {
+                "id": "a92327f1-570f-4442-9ef5-de5a41549fbf",
+                "resourcePath": "objects\\obj_townCutScene\\obj_townCutScene.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d283c2ea-3a0c-4100-b97a-4d91afff879d",
             "Value": {
                 "id": "92184848-6a2e-4434-a678-f1f2bddbcd29",
@@ -1423,6 +1455,14 @@
             }
         },
         {
+            "Key": "f147267c-4897-4c9f-a690-a6352dcb7ad9",
+            "Value": {
+                "id": "4074045b-d97d-462b-8af0-227c04c4d3ce",
+                "resourcePath": "objects\\objCamera\\objCamera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "d5d48837-13d5-4ff8-8a2e-63674691cca1",
@@ -1476,6 +1516,14 @@
                 "id": "e415b65c-b2a7-464d-97f4-2e2da881ed81",
                 "resourcePath": "notes\\compatibility_report_101118_1036163616.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "fd3155eb-4982-4087-bb99-24167f82cec7",
+            "Value": {
+                "id": "3f43d4c0-1843-49f3-9a6c-124f8eeb9ecc",
+                "resourcePath": "rooms\\cutsceneTown\\cutsceneTown.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

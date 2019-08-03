@@ -10,7 +10,7 @@ var x_scale = argument4;
 
 var sx = 7;
 var sy = -(spr_height / 2);
-gpu_set_fog(true, c_black, 0, 1);
+gpu_set_fog(true, c_black, -10000, 1);
 
 // We need flip x coords if the scale is negative
 var x1 = spr_x - (spr_width / 2) -sx;

@@ -3,7 +3,7 @@ vspeed = 0;
 hspeed = 0;
 
 // Center view on the player
-camera_set_view_pos(view_camera[0], x - (view_wport[0] / 2), y - (view_hport[0] / 2));
+//camera_set_view_pos(view_camera[0], x - (view_wport[0] / 2), y - (view_hport[0] / 2));
 
 // Move backgrounds as we move
 var _cam_x = camera_get_view_x(view_camera[0]);

@@ -1,7 +1,7 @@
 
 if (sprite_index != noone) 
 {
-	gpu_set_fog(true, c_black, 0, 0);
+	gpu_set_fog(true, c_black, -10000, 1);
 	var bm = gpu_get_blendmode_ext();
 	gpu_set_blendmode_ext(bm_dest_alpha, bm[1]);
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
